@@ -1,0 +1,37 @@
+[core]
+  editor = code --wait
+  excludesfile = ~/.gitignore
+[user]
+  name = Jared Cobb
+  email = github@jaredcobb.com
+[color]
+  diff = auto
+  status = auto
+  branch = auto
+  ui = always
+[alias]
+  s = status
+  l = smart-log
+  info = config --list
+  p = smart-pull
+  m = smart-merge
+[diff]
+  tool = vscode
+[difftool "vscode"]
+  cmd = code --wait --diff $LOCAL $REMOTE
+  promp = false
+  trustExitCode = true
+[merge]
+  tool = vscode
+[mergetool "vscode"]
+  cmd = code --wait $MERGED
+  promp = false
+  trustExitCode = true
+[push]
+  default = tracking
+[rerere]
+  enabled = 1
+[help]
+  autocorrect = true
+[fetch]
+  prune = true

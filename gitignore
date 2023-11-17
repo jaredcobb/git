@@ -1,0 +1,11 @@
+.*.sw[o-z]
+.idea*
+.DS_Store
+tags
+*~
+.vimprojects
+.VimballRecord
+.netrwhist
+*env.rb*
+*.sass-cache*
+.vscode
